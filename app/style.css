@@ -1,0 +1,266 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  scroll-behavior: smooth;
+  text-align: center;
+  max-width: 600px;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inheret;
+          box-sizing: inheret;
+}
+
+body {
+  margin: auto;
+  padding: 0;
+  line-height: 1.3;
+  max-width: 600px;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+.custom-shape-divider-top-1608412161 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1608412161 svg {
+  position: relative;
+  display: block;
+  width: calc(152% + 1.3px);
+  height: 224px;
+}
+
+.custom-shape-divider-top-1608412161 .shape-fill {
+  fill: #CF5757;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-top-1608412161 svg {
+    width: calc(181% + 1.3px);
+    height: 134px;
+  }
+}
+
+.email {
+  min-width: 600px;
+  text-align: center;
+  margin: auto;
+  background-color: #f8f4e3;
+  color: #1a1a1a;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.email__wrapper {
+  position: relative;
+  margin: auto;
+  min-width: 33.75rem;
+  border: 3px solid black;
+}
+
+@media (max-width: 39.9375em) {
+  .email__wrapper {
+    min-width: 19.75rem;
+  }
+}
+
+.email__bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 16.875rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (max-width: 39.9375em) {
+  .email__bg {
+    height: 13.4375rem;
+    width: 18.125rem;
+  }
+}
+
+.email__bg__forLogo {
+  margin-bottom: 2.1875rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/AdobeStock_228144922.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/AdobeStock_228144922.jpg);
+}
+
+.email__bg__forLogo .logo {
+  height: 10.9375rem;
+}
+
+.email__bg__forOfferings {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/French-Toast-Side.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/French-Toast-Side.jpg);
+}
+
+.email__bg__forOfferings p, .email__bg__forOfferings h1 {
+  color: #f8f4e3;
+}
+
+.email__bg__forOfferings p {
+  font-size: .8125rem;
+}
+
+.email__bg__forOfferings h1 {
+  font-size: 3.4375rem;
+}
+
+.email__welcome {
+  background-color: #CF5757;
+  padding: 3.125rem 2.5rem;
+}
+
+@media (max-width: 39.9375em) {
+  .email__welcome {
+    padding: 3.125rem .3125rem;
+  }
+}
+
+.email__welcome h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.email__welcome h2 {
+  color: #f8f4e3;
+}
+
+.email__welcome img {
+  height: 6.25rem;
+}
+
+.email__welcome p {
+  color: #f8f4e3;
+}
+
+.email__welcome__banner {
+  max-height: 2.5rem;
+}
+
+.email__welcome__banner img {
+  height: 14rem;
+  padding-top: 3.125rem;
+  position: relative;
+  z-index: 2;
+}
+
+.email__textMain {
+  padding: .9375rem 3.5rem;
+  font-size: .875rem;
+  font-weight: 500;
+}
+
+.email__divider {
+  position: relative;
+  min-height: 12.5rem;
+}
+
+.email__offerings {
+  padding: 1.25rem 2.5rem;
+  position: relative;
+  color: #CF5757;
+}
+
+@media (max-width: 39.9375em) {
+  .email__offerings {
+    padding: 3.125rem .3125rem;
+  }
+}
+
+.email__offerings__dinein {
+  padding-top: 2.1875rem;
+  padding-bottom: 2.1875rem;
+  color: #1a1a1a;
+}
+
+.email__offerings__finePrint {
+  padding: .625rem 2.5rem 2.5rem;
+  color: #1a1a1a;
+  font-size: .6875rem;
+  font-weight: 400;
+}
+
+.email__offerings__button {
+  padding: .6875rem 2.5rem;
+  margin-top: .625rem;
+  background-color: #CF5757;
+  border: 2px solid #CF5757;
+  border-radius: 7px;
+  color: #f8f4e3;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.email__footer {
+  margin-top: 1.875rem;
+  padding: 1.25rem 2.5rem;
+  background-color: #1a1a1a;
+  color: #f8f4e3;
+}
+
+.email__footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 3.125rem;
+  padding: 1.25rem 0;
+}
+
+.email__footer__social__icon img {
+  height: 1.25rem;
+  margin: 0 .275rem;
+  padding: .575em;
+  border: 1px solid #f8f4e3;
+  border-radius: 1rem;
+}
+
+.email__footer__details {
+  font-size: .6875rem;
+}
+
+.email__footer__details a {
+  color: #f8f4e3;
+}
+
+.email__footer__logo {
+  height: 1.25rem;
+  padding: 1.875rem 0;
+}
+/*# sourceMappingURL=style.css.map */

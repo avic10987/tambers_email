@@ -1,0 +1,223 @@
+@import "mixins";
+@import "globals";
+
+$tambersRed: #CF5757;
+$tambersGold:#f8f4e3;
+$offBlack: rgb(26, 26, 26);
+
+.email {
+    min-width: 600px;
+    text-align: center;
+    margin: auto;
+
+    background-color: $tambersGold;
+    color: $offBlack;
+    font-family: 'Montserrat', sans-serif;
+
+    
+    &__wrapper {
+        position: relative;
+        margin: auto;
+        min-width: 33.75rem;
+
+        @include breakpoint-down(small) {
+            min-width: 19.75rem;
+        }
+
+        border: 3px solid black;
+    
+    }
+
+    &__bg {
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        height: 16.875rem; //270px
+        margin-left: auto;
+        margin-right: auto;
+        width: 25rem; //400 px
+
+        @include breakpoint-down(small) {
+            height: 13.4375rem; //215px 
+            width: 18.125rem; //290px
+        }
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+        &__forLogo {
+            margin-bottom: 2.1875rem;
+
+            background-image: 
+            linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+            ), 
+            url(../images/AdobeStock_228144922.jpg);
+
+            .logo {
+                height: 10.9375rem;
+            }
+        }
+
+        &__forOfferings {
+            
+
+            background-image: 
+            linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+            ), 
+            url(../images/French-Toast-Side.jpg);
+
+            p, h1 {
+                color: $tambersGold;
+                } 
+                
+            p {
+                font-size: .8125rem;
+            }
+
+            h1 {
+                font-size: 3.4375rem;
+            }
+        }
+
+    }
+
+    &__welcome {
+        background-color: $tambersRed;
+        padding: 3.125rem 2.5rem;
+        
+        @include breakpoint-down(small) {
+            padding: 3.125rem .3125rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        h2 {
+            color: $tambersGold;
+        }
+        img {
+            height: 6.25rem;
+        }
+
+        p {
+            color: $tambersGold
+        }
+
+        &__banner {
+            max-height: 2.5rem;
+            img {
+                height: 14rem;
+                padding-top: 3.125rem;
+                position: relative;
+                z-index: 2;
+
+            }
+        }
+
+    }
+
+    &__textMain {
+        padding: .9375rem 3.5rem;
+
+        font-size: .875rem;
+        font-weight: 500;
+        
+    }
+
+    &__divider {
+        position: relative;
+        min-height: 12.5rem;
+    }
+
+    &__offerings {
+        padding: 1.25rem 2.5rem;
+        position: relative;
+
+        @include breakpoint-down(small) {
+            padding: 3.125rem .3125rem;
+        }
+
+        color: $tambersRed;
+
+        &__dinein {
+            padding-top: 2.1875rem;
+            padding-bottom: 2.1875rem;
+
+            color: $offBlack;
+        }
+
+        &__finePrint {
+            padding: .625rem 2.5rem 2.5rem;
+
+            color: $offBlack;
+            font-size: .6875rem;
+            font-weight: 400;
+        }
+
+        &__button {
+            padding: .6875rem 2.5rem;
+            margin-top: .625rem;
+            
+            background-color: $tambersRed;
+            border: 2px solid $tambersRed;
+            border-radius: 7px;
+            color: $tambersGold;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+    }
+
+    &__footer {
+        margin-top: 1.875rem;
+        padding: 1.25rem 2.5rem;
+
+        background-color: $offBlack;
+        color: $tambersGold;
+
+        &__social {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            height: 3.125rem;
+            padding: 1.25rem 0;
+
+            &__icon {
+                img {
+                    height: 1.25rem; 
+                    margin: 0 .275rem;
+                    padding: .575em;
+
+                    border: 1px solid $tambersGold;
+                    border-radius: 1rem;
+                }
+            }
+
+        }
+
+        &__details {
+            font-size: .6875rem;
+            a {
+                color: $tambersGold;
+            }
+        }
+
+        &__logo {
+            height: 1.25rem;
+            padding: 1.875rem 0;
+        }
+
+
+    }
+
+}
